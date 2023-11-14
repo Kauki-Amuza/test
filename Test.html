@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #faf7f7;
+            background-attachment: fixed;
+            width: 100%;
+            top: 0;
+            height: 50px;
+        }
+        .logo{
+            width: 20%;
+        }
+        .navlnks{
+            width: 50%;
+        }
+        .imgs{
+            width: 10%;
+        }
+        .lft{
+            width: 20%;
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+        }
+        .rght{
+            width: 80%;
+            margin-left: 20%;
+            background-color: #999;
+            margin-top: 50px;
+            padding: 30px;
+            height: 100vh;
+        }
+
+        .search-container {
+        position: relative;
+        display: inline-block;
+        }
+        #search-input {
+        padding: 5px 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+
+        .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #999;
+        cursor: pointer;
+        }
+        .lnk{
+            margin-top: 20px;
+            font-size: 2em;
+            font-weight: 500;
+            font-style:;
+            
+        }
+        .tp{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .rqst{
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 10px;
+            
+        }
+        img{
+            width: 150px;
+        }
+        .im{
+            width: 150px;
+            height: 170px;
+            padding-right: 10px;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="" alt="">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Facebook">
+                <span class="search-icon">&#128269;</span>
+              </div>
+              
+        </div>
+        <div class="navlnks"></div>
+        <div class="imgs"></div>
+    </div>
+    <div class="lft">
+        <h2>Friends</h2>
+        <div class="lnk">Home</div>
+        <div class="lnk">Friend Requests</div>
+        <div class="lnk">Suggestions</div>
+        <div class="lnk">All Friends</div>
+        <div class="lnk">Birthdays</div>
+        <div class="lnk">Custom Lists</div>
+    </div>
+    <div class="rght">
+        <div class="tp">
+            <h3>Friend Requests</h3>
+            <a href="#">See All</a>
+        </div>
+        <div class="rqst">
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            <div class="im">
+                <img src="" alt="">
+                <h5></h5>
+                <button class="Accept"></button>
+                <button class="delete"></button>
+            </div>
+            
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

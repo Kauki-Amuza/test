@@ -59,9 +59,9 @@
             margin-top: 10px;
         }
         .rght{
-            width: 75%;
-            margin-left: 20%;
-            background-color: rgb(160, 148, 148);
+            width: 70%;
+            margin-left: 25%;
+            background-color: #f1f1f1;
             
             padding: 30px;
             height: 100vh;
@@ -108,12 +108,13 @@
             align-items: center;
             margin-right: 10px; 
         }
-        .imgs .icon{
-            width: 30px;
-            height: 30px;
+        .imgs ion-icon{
+            
             background-color: grey;
             text-align: center;
             border-radius: 50%;
+            font-size: 1.5em;
+            
            
         }
         
@@ -159,12 +160,24 @@
         background-attachment: initial;
         }
         .lnk{
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+           
+        }
+        .lnk ion-icon{
             width: 40px;
             height: 40px;
             background-color: grey;
             text-align: center;
             border-radius: 50%;
-           
+            font-size: 1.2em;
+            line-height: 3px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
         }
 
 
@@ -196,13 +209,18 @@
     </div>
     <div class="bg">
         <div class="lft">
-            <h2>Friends</h2>
-            <div class="lnk"><ion-icon name="home"></ion-icon>Home</div>
-            <div class="lnk"><ion-icon name="person-add"></ion-icon>Friend Requests</div>
-            <div class="lnk"><ion-icon name="contacts"></ion-icon>Suggestions</div>
-            <div class="lnk"><ion-icon name="wallet"></ion-icon>All Friends</div>
-            <div class="lnk"><ion-icon name="gift"></ion-icon>Birthdays</div>
-            <div class="lnk"><ion-icon name="list-box"></ion-icon>Custom Lists</div>
+            <div class="top">
+                <h2>Friends</h2>
+                <ion-icon name="person-add"></ion-icon>
+            </div>
+            
+            <div class="lnk"><ion-icon name="home"  style="background-color: blue; color: white;">
+            </ion-icon><h6>Home</h6></div>
+            <div class="lnk"><ion-icon name="person-add"></ion-icon><h6>Friend Requests</h6></div>
+            <div class="lnk"><ion-icon name="walk"></ion-icon><h6>Suggestions</h6></div>
+            <div class="lnk"><ion-icon name="people"></ion-icon><h6>All Friends</h6></div>
+            <div class="lnk"><ion-icon name="gift"></ion-icon><h6>Birthdays</h6></div>
+            <div class="lnk"><ion-icon name="person"></ion-icon><h6>Custom Lists</h6></div>
         </div>
         <div class="rght">
             <div class="tp">

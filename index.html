@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
         }
-        body{
+
+        body {
             padding: 0;
             margin: 0;
         }
-        .nav{
+
+        .nav {
             display: flex;
             position: fixed;
             align-items: center;
@@ -25,44 +28,49 @@
             height: 50px;
             padding: 10px;
         }
-        .logo{
+
+        .logo {
             width: 20%;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
         }
-        .navlnks{
+
+        .navlnks {
             width: 40%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .navlnks .icon{
+
+        .navlnks .icon {
             right: 8px;
             font-size: 1.2em;
             line-height: 57px;
         }
-        
-        .imgs{
+
+        .imgs {
             width: 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-right: 20px;
         }
-        .lft{
+
+        .lft {
             width: 20%;
             height: 100vh;
             position: fixed;
             padding: 20px;
             margin-top: 10px;
         }
-        .rght{
+
+        .rght {
             width: 70%;
             margin-left: 25%;
             background-color: #f1f1f1;
-            
+
             padding: 30px;
             height: 100vh;
         }
@@ -71,6 +79,7 @@
             position: relative;
             display: inline-block;
         }
+
         #search-input {
             padding: 5px 5px;
             border: 1px solid #ccc;
@@ -87,47 +96,51 @@
             color: #999;
             cursor: pointer;
         }
-        .lnk{
+
+        .lnk {
             margin-top: 20px;
             font-size: 2em;
             font-weight: 500;
             width: 100%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             border-radius: 10px;
-            
-            
         }
-        .tp{
+
+        .tp {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
         }
-        .rqst{
+
+        .rqst {
             width: 100%;
             display: flex;
             padding: 10px;
             justify-content: space-between;
             align-items: center;
-            margin-right: 10px; 
+            margin-right: 10px;
         }
-        .imgs ion-icon{
-            
+
+        .imgs ion-icon {
+
             background-color: grey;
             text-align: center;
             border-radius: 50%;
             font-size: 1.5em;
-            
-           
+
+
         }
-        
-        img{
+
+        img {
             width: 100%;
             border-radius: 10px;
-            
+
         }
-        .im{
+
+        .im {
             width: 200px;
             height: 320px;
             background-color: white;
@@ -135,36 +148,39 @@
             border: 1px solid rgb(26, 23, 23);
             border-radius: 10px;
         }
-        
-        .prof{
+
+        .prof {
             border-radius: 50%;
-            background-image: url(1b.jpg) ;
+            background-image: url(1b.jpg);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
         }
-        .bg{
+
+        .bg {
             display: flex;
             margin-top: 50px;
         }
-        .log0{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 5px;
-        margin: 5px;
+
+        .log0 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
         }
-        .img{
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        background-image: url(fb.png) ;
-        background-position: center;
-        background-size: cover;
-        background-attachment: initial;
+
+        .img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-image: url(fb.png);
+            background-position: center;
+            background-size: cover;
+            background-attachment: initial;
         }
-       
-        .lnk ion-icon{
+
+        .lnk ion-icon {
             width: 40px;
             height: 40px;
             background-color: grey;
@@ -173,17 +189,24 @@
             font-size: 1.2em;
             line-height: 3px;
         }
-        .top{
+
+        .top {
             display: flex;
             justify-content: space-between;
         }
-        .lnk:hover{
+
+        .lnk:hover {
             background-color: grey;
         }
+        .ln2{
+            display: flex;
+            align-items: center;
+        }
 
-
+       
     </style>
 </head>
+
 <body>
     <div class="nav">
         <div class="logo">
@@ -191,8 +214,8 @@
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search Facebook">
                 <span class="search-icon">&#128269;</span>
-              </div>
-              
+            </div>
+
         </div>
         <div class="navlnks">
             <span class="icon"><ion-icon name="home"></ion-icon></span>
@@ -212,16 +235,40 @@
         <div class="lft">
             <div class="top">
                 <h2>Friends</h2>
-                <ion-icon name="person-add"></ion-icon>
+                <ion-icon name="settings" style="font-size: 1.5em;"></ion-icon>
             </div>
-            
-            <div class="lnk"><ion-icon name="home"  style="background-color: blue; color: white;">
-            </ion-icon><h6>Home</h6></div>
-            <div class="lnk"><ion-icon name="person-add"></ion-icon><h6>Friend Requests</h6></div>
-            <div class="lnk"><ion-icon name="walk"></ion-icon><h6>Suggestions</h6></div>
-            <div class="lnk"><ion-icon name="people"></ion-icon><h6>All Friends</h6></div>
-            <div class="lnk"><ion-icon name="gift"></ion-icon><h6>Birthdays</h6></div>
-            <div class="lnk"><ion-icon name="person"></ion-icon><h6>Custom Lists</h6></div>
+
+
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="Home" style="color: white; background-color: blue;"></ion-icon>
+                    <h6>Home</h6></div>
+                    
+            </div>
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="person-add"></ion-icon>
+                <h6>Friend Requests</h6></div>
+                <h3>></h3>
+            </div>
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="person-add"></ion-icon>
+                <h6>Suggestions</h6></div>
+                <h3>></h3>
+            </div>
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="person-add"></ion-icon>
+                    <h6>All Friends</h6></div>
+                    <h3>></h3>
+            </div>
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="person-add"></ion-icon>
+                <h6>Birthdays</h6></div>
+                
+            </div>
+            <div class="lnk">
+                <div class="ln2"><ion-icon name="person-add"></ion-icon>
+                    <h6>Custom Lists</h6></div>
+                    <h3>></h3>
+            </div>
         </div>
         <div class="rght">
             <div class="tp">
@@ -265,4 +312,5 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

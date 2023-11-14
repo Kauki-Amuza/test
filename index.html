@@ -28,16 +28,24 @@
             width: 20%;
         }
         .navlnks{
-            width: 50%;
+            width: 40%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        .navlnks .icon{
+            right: 8px;
+            font-size: 1.2em;
+            color: brown;
+            line-height: 57px;
         }
         .imgs{
             width: 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: red;
+            margin-left: 20px;
         }
         .lft{
             width: 20%;
@@ -46,7 +54,7 @@
             padding: 20px;
         }
         .rght{
-            width: 80%;
+            width: 75%;
             margin-left: 20%;
             background-color: #999;
             margin-top: 50px;
@@ -66,19 +74,19 @@
         }
 
         .search-icon {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        font-size: 20px;
-        color: #999;
-        cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #999;
+            cursor: pointer;
         }
         .lnk{
             margin-top: 20px;
             font-size: 2em;
             font-weight: 500;
-            font-style:;
+            
             
         }
         .tp{
@@ -107,15 +115,15 @@
         }
         .menu{
             border-radius: 50%;
-            background-color: #999;
+            background-color: #cc0404;
         }
         .message{
             border-radius: 50%;
-            background-color: #999;
+            background-color: #330606;
         }
         .noti{
             border-radius: 50%;
-            background-color: #999;
+            background-color: #ff0909;
         }
         .prof{
             border-radius: 50%;
@@ -139,13 +147,13 @@
               
         </div>
         <div class="navlnks">
-            <div class="icon"><ion-icon name="home"></ion-icon></div>
-            <div class="icon"><ion-icon name="tv"></ion-icon></ion-icon></div>
-            <div class="icon"><ion-icon name="wallet"></ion-icon></div>
-            <div class="icon"><ion-icon name="contact"></ion-icon></ion-icon></div>
-            <div class="icon"><ion-icon name="switch"></ion-icon></div>
+            <span class="icon"><ion-icon name="home"></ion-icon></span>
+            <span class="icon"><ion-icon name="tv"></ion-icon></span>
+            <span class="icon"><ion-icon name="home"></ion-icon></span>
+            <span class="icon"><ion-icon name="wallet"></ion-icon></span>
+            <span class="icon"><ion-icon name="wallet"></ion-icon></span>
         </div>
-        <div class="imgs">
+        <div class="imgs" style="background-color: red;">
             <div class="menu"></div>
             <div class="message"></div>
             <div class="noti"></div>
